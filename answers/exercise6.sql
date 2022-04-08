@@ -1,0 +1,6 @@
+SELECT Country,
+COUNT(*) AS c
+FROM Students
+GROUP BY Country
+HAVING c > 10
+ORDER BY c DESC;
